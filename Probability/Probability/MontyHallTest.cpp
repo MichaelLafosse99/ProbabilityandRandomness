@@ -20,9 +20,29 @@ MontyHallTest::MontyHallTest()
 
 }
 
-void MontyHallTest::PerformTest(int num)
+void MontyHallTest::PerformTest()
 {
-	totalTests = num;
+	
+}
+
+void MontyHallTest::stayedTest()
+{
+	srand(0);
+
+	int correctChoice = 1;
+
+	totalTests = 10;
+
+	int choiceTwo = rand() % 3;
+
+	if(choiceTwo != correctChoice)
+	{
+		totalTests++;
+	}
+	else
+	{
+		correctStayed++;
+	}
 }
 
 char* MontyHallTest::getCorrectSwitched()

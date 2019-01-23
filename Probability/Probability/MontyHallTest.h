@@ -7,8 +7,9 @@ public:
 
 	MontyHallTest();
 
-	void PerformTest(int);
+	void PerformTest();
 
+	void stayedTest();
 
 	char* getCorrectSwitched();
 	char* getCorrectStayed();
