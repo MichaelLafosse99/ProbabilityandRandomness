@@ -1,12 +1,16 @@
 #pragma once
-#include <cmath>
 #include <iostream>
 
 class MontyHallTest
 {
 public:
 
+	MontyHallTest();
+
 	void PerformTest(int);
+
+	char* getCorrectSwitched();
+	char* getCorrectStayed();
 
 private:
 
