@@ -9,7 +9,11 @@ public:
 
 	void PerformTest();
 
-	void stayedTest();
+
+	void StayedTest();
+
+	void SwitchTest();
+
 
 	char* getCorrectSwitched();
 	char* getCorrectStayed();
@@ -17,6 +21,7 @@ public:
 	char* GetCorrectStayedPercent();
 	char* GetCorrectSwitchedPercent();
 
+	char* GetTotalTests();
 
 private:
 
