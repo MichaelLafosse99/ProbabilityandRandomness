@@ -22,18 +22,36 @@ MontyHallTest::MontyHallTest()
 
 void MontyHallTest::PerformTest()
 {
-	for (int i = 0; i < 5; i++)
+  
+  	for (int i = 0; i < 5; i++)
 	{
 		SwitchTest();
 	}
+	
 }
 
-void MontyHallTest::SwitchTest()
+void MontyHallTest::stayedTest()
 {
 	srand(0);
 
 	int correctChoice = 1;
 
+	totalTests = 10;
+
+	int choiceTwo = rand() % 3;
+
+	if(choiceTwo != correctChoice)
+	{
+		totalTests++;
+	}
+	else
+	{
+		correctStayed++;
+	}
+}
+
+void MontyHallTest::SwitchTest()
+{
 	int choiceOne = rand() % 3;
 
 	int reChoice;
@@ -51,7 +69,6 @@ void MontyHallTest::SwitchTest()
 	totalTests++;
 
 	correctSwitchedPercentage = correctSwitched / totalTests;
-
 }
 
 char* MontyHallTest::getCorrectSwitched()

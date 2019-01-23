@@ -9,7 +9,11 @@ public:
 
 	void PerformTest();
 
+
+	void StayedTest();
+
 	void SwitchTest();
+
 
 	char* getCorrectSwitched();
 	char* getCorrectStayed();
