@@ -15,8 +15,8 @@ MontyHallTest::MontyHallTest()
 		choices[i] = i + 1;
 	}
 
-	percentageSwitchedCorrect = .0f;
-	percentageStayedCorrect = .0f;
+	correctSwitchedPercentage = .0f;
+	correctStayedPercentage = .0f;
 
 }
 
@@ -50,6 +50,7 @@ char* MontyHallTest::getCorrectStayed()
 	std::string stayedString = std::to_string(correctStayed);
 
 	char* chrPtr = &stayedString[0];
+}
 
 char* MontyHallTest::GetCorrectSwitchedPercent()
 {
