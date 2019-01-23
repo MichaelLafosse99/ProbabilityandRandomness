@@ -2,7 +2,17 @@
 #include <cmath>
 #include <iostream>
 
-class test
+class MontyHallTest
 {
-	
+
+public:
+
+	void PerformTest(int);
+
+private:
+
+	int totalTests;
+
+	int correctSwitched;
+	int correctStayed;
 };
