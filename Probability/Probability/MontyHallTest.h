@@ -9,8 +9,13 @@ public:
 
 	void PerformTest(int);
 
+
 	char* getCorrectSwitched();
 	char* getCorrectStayed();
+
+	char* GetCorrectStayedPercent();
+	char* GetCorrectSwitchedPercent();
+
 
 private:
 
@@ -19,9 +24,9 @@ private:
 	int correctSwitched;
 	int correctStayed;
   
-	char choices[3];
+	int choices[3];
 
-	float percentageStayedCorrect;
-	float percentageSwitchedCorrect;
+	float correctStayedPercentage;
+	float correctSwitchedPercentage;
 
 };
