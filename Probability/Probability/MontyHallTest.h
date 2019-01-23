@@ -9,8 +9,13 @@ public:
 
 	void PerformTest(int);
 
+
+	char* getCorrectSwitched();
+	char* getCorrectStayed();
+
 	char* GetCorrectStayedPercent();
 	char* GetCorrectSwitchedPercent();
+
 
 private:
 
