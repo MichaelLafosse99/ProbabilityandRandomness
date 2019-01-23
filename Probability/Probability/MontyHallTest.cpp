@@ -20,9 +20,38 @@ MontyHallTest::MontyHallTest()
 
 }
 
-void MontyHallTest::PerformTest(int num)
+void MontyHallTest::PerformTest()
 {
-	totalTests = num;
+	for (int i = 0; i < 5; i++)
+	{
+		SwitchTest();
+	}
+}
+
+void MontyHallTest::SwitchTest()
+{
+	srand(0);
+
+	int correctChoice = 1;
+
+	int choiceOne = rand() % 3;
+
+	int reChoice;
+
+	do
+	{
+
+		reChoice = rand() % 2;
+
+	} while (reChoice != choiceOne);
+
+	if (reChoice == correctChoice)
+		correctSwitched++;
+
+	totalTests++;
+
+	correctSwitchedPercentage = correctSwitched / totalTests;
+
 }
 
 char* MontyHallTest::getCorrectSwitched()
@@ -57,6 +86,15 @@ char* MontyHallTest::GetCorrectSwitchedPercent()
 	std::string switchedString = std::to_string(correctSwitchedPercentage);
 
 	char* chrPtr = &switchedString[0];
+
+	return chrPtr;
+}
+
+char* MontyHallTest::GetTotalTests()
+{
+	std::string totalString = std::to_string(totalTests);
+
+	char* chrPtr = &totalString[0];
 
 	return chrPtr;
 }

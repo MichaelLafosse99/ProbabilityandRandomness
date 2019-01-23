@@ -7,8 +7,9 @@ public:
 
 	MontyHallTest();
 
-	void PerformTest(int);
+	void PerformTest();
 
+	void SwitchTest();
 
 	char* getCorrectSwitched();
 	char* getCorrectStayed();
@@ -16,6 +17,7 @@ public:
 	char* GetCorrectStayedPercent();
 	char* GetCorrectSwitchedPercent();
 
+	char* GetTotalTests();
 
 private:
 
