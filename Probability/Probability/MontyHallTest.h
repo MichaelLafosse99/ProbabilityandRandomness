@@ -10,6 +10,11 @@ public:
 
 private:
 
+	int totalTests;
+
+	int correctSwitched;
+	int correctStayed;
+  
 	char choices[3];
 
 	float percentageStayedCorrect;
